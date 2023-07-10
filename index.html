@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html data-theme="cupcake">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Regat Portfolio</title>
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    	html, body {
+    		scroll-behavior: smooth;
+    	}
+    	@keyframes wave-animation {
+    		0% {
+    			transform: rotate(0deg);
+    		}
+    		10% {
+    			transform: rotate(-10deg);
+    		}
+    		20% {
+    			transform: rotate(10deg);
+    		}
+    		30% {
+    			transform: rotate(-10deg);
+    		}
+    		40% {
+    			transform: rotate(10deg);
+    		}
+    		50% {
+    			transform: rotate(0deg);
+    		}
+    		100% {
+    			transform: rotate(0deg);
+    		}
+    	}
+    	.wave-hand {
+    		display: inline-block;
+    		animation: wave-animation 2s infinite;
+    	}
+
+    	/* Media Query untuk tampilan hp */
+    	@media (max-width: 767px) {
+    		/* Tata letak navbar */
+    		.navbar-start {
+    			display: flex;
+    			justify-content: space-between;
+    			align-items: center;
+    		}
+
+    		.navbar-center {
+    			display: none;
+    		}
+
+    		.navbar-end {
+    			display: flex;
+    			justify-content: flex-end;
+    			align-items: center;
+    		}
+
+    		/* Padding top pada flex container */
+    		.flex.flex-col.pt-20 {
+    			padding-top: 5rem;
+    		}
+
+    		/* Margin pada bagian About Me */
+    		section#about .grid.grid-cols-1.md\:grid-cols-2 > div:nth-child(1) {
+    			margin-bottom: 2rem;
+    		}
+
+    		/* Margin pada bagian Get in Touch */
+    		section#contact .grid.grid-cols-1.md\:grid-cols-2 > div:nth-child(1) {
+    			margin-bottom: 2rem;
+    		}
+    	}
+    </style>
+
+</head>
+<body>
+	<div class="navbar bg-base-100 border-b">
+		<div class="navbar-start">
+			<div class="dropdown">
+				<label tabindex="0" class="btn btn-ghost lg:hidden">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+				</label>
+				<ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<a class="btn btn-ghost normal-case text-2xl">Regat<span class="text-gray-300">ryl</span></a>
+		</div>
+		<div class="navbar-center hidden lg:flex">
+			<ul class="menu menu-horizontal px-1">
+				<li><a href="#" class="text-lg font-bold">Home</a></li>
+				<li><a href="#about" class="text-lg font-bold">About</a></li>
+				<li><a href="#contact" class="text-lg font-bold">Contact</a></li>
+			</ul>
+		</div>
+		<div class="navbar-end">
+			<a href="https://github.com/Regatryl" class="text-blue-500 ">Github</a>
+		</div>
+	</div>
+
+	<div class="flex flex-col pt-20">
+		<p class="text-4xl font-bold justify-start pl-7" data-aos="fade-down-right" data-aos-duration="1000">Hi There<span class="wave-hand">👋</span>, I'm M. Urwah A.</p>
+		<p class="text-2xl font-bold text-blue-500 justify-start pl-7" data-aos="slide-up" data-aos-duration="1000">Someone who likes to <span id="some"></span></p>
+	</div>
+
+	<div class="bg-[#e3f2fd] px-6 mt-96">
+		<div>
+			<section id="about" class="text-black py-20">
+				<div class="grid grid-cols-1 md:grid-cols-2">
+					<div class="flex justify-center md:mb-0 mb-20 py-5">
+						<p data-aos="fade-up-right" class="z-50" style="color:transparent"></p>
+						<p data-aos="fade-up-right" data-aos-duration="1500" class="mt-5 md:mt-20 absolute" style="color:transparent"></p>
+					</div>
+					<div class="ml-10 mr-10 pt-10">
+						<h1 class="text-3xl font-bold leading-9" data-aos="fade-up">About Me</h1>
+						<div class="bg-[#6C63FF] w-[150px] h-[5px]" data-aos="fade-up" data-aos-duration="1000"></div>
+						<p class="mt-2 font-semibold" data-aos="fade-down" data-aos-duration="1000">
+							My full name is Muhammad Urwah Alwutsqo, but you can call me Urwah. I am also known as Regat in the online world. I am currently living in Indonesia, specifically in East Java, Sidoarjo, Jabon. I'm just someone who wants to learn new things, only sometimes will take it seriously, i learn coding since 2021, and I have a particular interest in full-stack development but before i prefer in back-end. Throughout my journey, I have gained experience in various languange, including Node.js, Python, Lua, Next.js, HTML, Tailwind CSS, and DaisyUI.
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<div class="bg-[#e3f2fd] px-6 py-12">
+		<div>
+			<section id="contact" class="text-black py-20">
+				<div class="grid grid-cols-1 md:grid-cols-2">
+					<div class="ml-10 mr-10 pt-10">
+						<h1 class="text-3xl font-bold leading-9" data-aos="fade-up">Get in Touch</h1>
+						<div class="bg-[#6C63FF] w-[150px] h-[5px]" data-aos="fade-up" data-aos-duration="1000"></div>
+						<form class="mt-6">
+							<div class="mb-6">
+								<label for="name" class="block text-lg font-semibold">Nama</label>
+								<input type="text" id="name" name="name" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1">
+							</div>
+							<div class="mb-6">
+								<label for="email" class="block text-lg font-semibold">Your Email</label>
+								<input type="email" id="email" name="email" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1">
+							</div>
+							<div class="mb-6">
+								<label for="message" class="block text-lg font-semibold">Message</label>
+								<textarea id="message" name="message" rows="4" class="w-full bg-white border border-gray-300 rounded-md py-2 px-3 mt-1"></textarea>
+							</div>
+							<button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+								ASAP
+							</button>
+						</form>
+						<div class="mt-4 font-semibold text-lg border-b">
+							<p>Discord: RegatRyl#1438</p>
+						    <p>Email: regadryl@gmail.com</p>
+						    <p>Github: RegatRyl</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+    <script>
+    	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    		anchor.addEventListener('click', function (e) {
+    			e.preventDefault();
+
+    			document.querySelector(this.getAttribute('href')).scrollIntoView({
+    				behavior: 'smooth'
+    			});
+    		});
+    	});
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+    	AOS.init();
+
+    	var typed = new Typed('#some', {
+    		strings: [
+    			'coding',
+    			'sleeping',
+    			'watching',
+    			'studying'
+    			],
+    		typeSpeed: 50,
+    		loop: true,
+    		backSpeed: 30,
+    		backDelay: 1500
+    	});
+    </script>
+</body>
+</html>
